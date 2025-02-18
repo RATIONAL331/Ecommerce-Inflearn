@@ -1,6 +1,7 @@
 package com.example.iordermicroservice.dto;
 
 import com.example.iordermicroservice.entity.OrderEntity;
+import com.example.iordermicroservice.vo.RequestOrder;
 import lombok.Data;
 
 @Data
@@ -21,6 +22,14 @@ public class OrderDto {
 		orderDto.setTotalPrice(saved.getTotalPrice());
 		orderDto.setOrderId(saved.getOrderId());
 		orderDto.setUserId(saved.getUserId());
+		return orderDto;
+	}
+
+	public static OrderDto from(RequestOrder requestOrder) {
+		OrderDto orderDto = new OrderDto();
+		orderDto.setProductId(requestOrder.getProductId());
+		orderDto.setQty(requestOrder.getQty());
+		orderDto.setUnitPrice(requestOrder.getUnitPrice());
 		return orderDto;
 	}
 }

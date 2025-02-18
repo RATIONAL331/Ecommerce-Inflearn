@@ -16,6 +16,12 @@ spring:
               - Path=/catalog-service/**
           filters:
               - StripPrefix=1
+        - id: IOrderService
+          uri: lb://IORDERMICROSERVICE
+          predicates:
+              - Path=/order-service/**
+          filters:
+              - StripPrefix=1
 
 server:
   port: 8000
