@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="31bddc78-81ad-4bfd-8795-1f85fa2cfb81" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ICatalogService/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ICatalogService/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ICatalogService/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ICatalogService/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ICatalogService/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ICatalogService/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ICatalogService/src/main/java/com/example/icatalogservice/ICatalogServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ICatalogService/src/main/java/com/example/icatalogservice/controller/CatalogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ICatalogService/src/main/java/com/example/icatalogservice/dto/CatalogDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ICatalogService/src/main/java/com/example/icatalogservice/entity/CatalogEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ICatalogService/src/main/java/com/example/icatalogservice/repository/CatalogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ICatalogService/src/main/java/com/example/icatalogservice/service/CatalogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ICatalogService/src/main/java/com/example/icatalogservice/service/impl/CatalogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ICatalogService/src/main/java/com/example/icatalogservice/vo/ResponseCatalog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ICatalogService/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ICatalogService/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ICatalogService/src/test/java/com/example/icatalogservice/ICatalogServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IEurekaDiscoveryService/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IEurekaDiscoveryService/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IEurekaDiscoveryService/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IEurekaDiscoveryService/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IEurekaDiscoveryService/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IEurekaDiscoveryService/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IEurekaDiscoveryService/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IEurekaDiscoveryService/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IEurekaDiscoveryService/src/main/java/com/example/ieurekadiscoveryservice/IEurekaDiscoveryServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IEurekaDiscoveryService/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IEurekaDiscoveryService/src/test/java/com/example/ieurekadiscoveryservice/IEurekaDiscoveryServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IGatewayService/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IGatewayService/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IGatewayService/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IGatewayService/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IGatewayService/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IGatewayService/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IGatewayService/src/main/java/com/example/igatewayservice/IGatewayServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IGatewayService/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IGatewayService/src/test/java/com/example/igatewayservice/IGatewayServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IOrderMicroService/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IOrderMicroService/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IOrderMicroService/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IOrderMicroService/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IOrderMicroService/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IOrderMicroService/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IOrderMicroService/src/main/java/com/example/iordermicroservice/IOrderMicroServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IOrderMicroService/src/main/java/com/example/iordermicroservice/dto/OrderDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IOrderMicroService/src/main/java/com/example/iordermicroservice/entity/OrderEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IOrderMicroService/src/main/java/com/example/iordermicroservice/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IOrderMicroService/src/main/java/com/example/iordermicroservice/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IOrderMicroService/src/main/java/com/example/iordermicroservice/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IOrderMicroService/src/main/java/com/example/iordermicroservice/vo/ResponseOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IOrderMicroService/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IOrderMicroService/src/test/java/com/example/iordermicroservice/IOrderMicroServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IUserMicroService/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IUserMicroService/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IUserMicroService/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IUserMicroService/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IUserMicroService/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IUserMicroService/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IUserMicroService/src/main/java/com/example/iusermicroservice/IUserMicroServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IUserMicroService/src/main/java/com/example/iusermicroservice/config/WebSecurity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IUserMicroService/src/main/java/com/example/iusermicroservice/controller/UsersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IUserMicroService/src/main/java/com/example/iusermicroservice/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IUserMicroService/src/main/java/com/example/iusermicroservice/entity/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IUserMicroService/src/main/java/com/example/iusermicroservice/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IUserMicroService/src/main/java/com/example/iusermicroservice/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IUserMicroService/src/main/java/com/example/iusermicroservice/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IUserMicroService/src/main/java/com/example/iusermicroservice/vo/Greeting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IUserMicroService/src/main/java/com/example/iusermicroservice/vo/RequestUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IUserMicroService/src/main/java/com/example/iusermicroservice/vo/ResponseOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IUserMicroService/src/main/java/com/example/iusermicroservice/vo/ResponseUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IUserMicroService/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IUserMicroService/src/test/java/com/example/iusermicroservice/IUserMicroServiceApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "RATIONAL331"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/RATIONAL331/Ecommerce-Inflearn.git",
+    "accountId": "d0a3a84a-d316-49df-9b38-3959c202662b"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2tCe9mMvV4BFTb5LONM9RlNOoeA" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/rational331/Documents/Github/Ecommerce-Inflearn",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="31bddc78-81ad-4bfd-8795-1f85fa2cfb81" name="Changes" comment="" />
+      <created>1739860334755</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739860334755</updated>
+      <workItem from="1739860335817" duration="95000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
