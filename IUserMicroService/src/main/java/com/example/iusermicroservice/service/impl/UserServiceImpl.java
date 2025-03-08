@@ -5,10 +5,13 @@ import com.example.iusermicroservice.entity.UserEntity;
 import com.example.iusermicroservice.repository.UserRepository;
 import com.example.iusermicroservice.service.UserService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -16,7 +19,7 @@ import java.util.UUID;
 @RequiredArgsConstructor
 public class UserServiceImpl implements UserService {
 	private final UserRepository userRepository;
-	private final BCryptPasswordEncoder passwordEncoder;
+	private final PasswordEncoder passwordEncoder;
 
 	@Override
 	public UserDto createUser(UserDto userDto) {
@@ -39,5 +42,18 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public List<UserEntity> getUsersByAll() {
 		return userRepository.findAll();
+	}
+
+	@Override
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+		UserEntity entity = userRepository.findByEmail(username)
+		                                  .orElseThrow(() -> new UsernameNotFoundException("user not found"));
+		return new User(entity.getEmail(),
+		                entity.getEncryptedPwd(),
+		                true,
+		                true,
+		                true,
+		                true,
+		                new ArrayList<>());
 	}
 }

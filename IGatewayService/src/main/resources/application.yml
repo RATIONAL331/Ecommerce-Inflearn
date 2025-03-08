@@ -7,21 +7,40 @@ spring:
         - id: IUserMicroservice
           uri: lb://IUSERMICROSERVICE
           predicates:
-            - Path=/user-service/**
+            - Path=/user-service/login
+            - Method=POST
           filters:
             - StripPrefix=1
+#            - RewritePath=/user-service/(?<segment>.*), /$\{segment}
+            - RemoveRequestHeader=Cookie
+        - id: IUserMicroservice
+          uri: lb://IUSERMICROSERVICE
+          predicates:
+            - Path=/user-service/users
+            - Method=POST
+          filters:
+            - StripPrefix=1
+            - RemoveRequestHeader=Cookie
+        - id: IUserMicroservice
+          uri: lb://IUSERMICROSERVICE
+          predicates:
+            - Path=/user-service/**
+            - Method=GET
+          filters:
+            - StripPrefix=1
+            - RemoveRequestHeader=Cookie
         - id: ICatalogService
           uri: lb://ICATALOGSERVICE
           predicates:
-              - Path=/catalog-service/**
+            - Path=/catalog-service/**
           filters:
-              - StripPrefix=1
+            - StripPrefix=1
         - id: IOrderService
           uri: lb://IORDERMICROSERVICE
           predicates:
-              - Path=/order-service/**
+            - Path=/order-service/**
           filters:
-              - StripPrefix=1
+            - StripPrefix=1
 
 server:
   port: 8000
