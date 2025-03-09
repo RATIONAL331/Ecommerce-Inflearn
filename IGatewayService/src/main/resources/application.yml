@@ -29,6 +29,7 @@ spring:
           filters:
             - StripPrefix=1
             - RemoveRequestHeader=Cookie
+            - AuthorizationHeaderFilter # Login, Register 제외한 모든 요청은 토큰이 필요하다.
         - id: ICatalogService
           uri: lb://ICATALOGSERVICE
           predicates:
@@ -51,3 +52,6 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka/
+
+token:
+  secret: Oh8IUy9dXyn8HfQBKWTPZ6r9GmzODPxHHfEk0lsYiEaS0Q26U1XgJPcAO6pYmgBn

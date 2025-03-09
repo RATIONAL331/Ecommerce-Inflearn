@@ -9,5 +9,6 @@ import java.util.List;
 public interface UserService extends UserDetailsService {
 	UserDto createUser(UserDto userDto);
 	UserDto getUserByUserId(String userId);
+	UserDto getUserByEmail(String email);
 	List<UserEntity> getUsersByAll();
 }

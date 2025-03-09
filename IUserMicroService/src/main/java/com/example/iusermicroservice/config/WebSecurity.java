@@ -6,6 +6,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.env.Environment;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
@@ -31,6 +32,7 @@ public class WebSecurity {
 			"/users/**"
 	};
 
+	private final Environment environment;
 	private final ObjectMapper objectMapper;
 	private final PasswordEncoder passwordEncoder;
 	private final UserService userService;
@@ -79,9 +81,8 @@ public class WebSecurity {
 	}
 
 	private AuthenticationFilter getAuthenticationFilter(AuthenticationConfiguration configuration) throws Exception {
-		AuthenticationFilter authenticationFilter = new AuthenticationFilter(authenticationManager(configuration), objectMapper);
-		authenticationFilter.setAuthenticationManager(authenticationManager(configuration));
-		return authenticationFilter;
+		//		authenticationFilter.setAuthenticationManager(authenticationManager(configuration));
+		return new AuthenticationFilter(authenticationManager(configuration), environment, objectMapper, userService);
 	}
 
 }

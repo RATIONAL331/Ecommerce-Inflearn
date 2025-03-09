@@ -40,6 +40,16 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
+	public UserDto getUserByEmail(String email) {
+		UserEntity user = userRepository.findByEmail(email)
+		                                .orElseThrow(() -> new UsernameNotFoundException("not found"));
+		UserDto userDto = UserDto.of(user);
+		userDto.setOrders(List.of());
+		return userDto;
+	}
+
+
+	@Override
 	public List<UserEntity> getUsersByAll() {
 		return userRepository.findAll();
 	}
