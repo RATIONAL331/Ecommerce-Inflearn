@@ -1,0 +1,6 @@
+token:
+  expiration_time: 86400000 # 1 day
+  secret: Oh8IUy9dXyn8HfQBKWTPZ6r9GmzODPxHHfEk0lsYiEaS0Q26U1XgJPcAO6pYmgBn
+
+gateway:
+  ip: 127.0.0.1
