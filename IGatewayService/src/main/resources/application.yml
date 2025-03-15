@@ -24,6 +24,14 @@ spring:
         - id: IUserMicroservice
           uri: lb://IUSERMICROSERVICE
           predicates:
+            - Path=/user-service/actuator/**
+            - Method=GET,POST
+          filters:
+            - StripPrefix=1
+            - RemoveRequestHeader=Cookie
+        - id: IUserMicroservice
+          uri: lb://IUSERMICROSERVICE
+          predicates:
             - Path=/user-service/**
             - Method=GET
           filters:
@@ -53,5 +61,11 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
 
-token:
-  secret: Oh8IUy9dXyn8HfQBKWTPZ6r9GmzODPxHHfEk0lsYiEaS0Q26U1XgJPcAO6pYmgBn
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans, httpexchanges
+
+#token:
+#  secret: Oh8IUy9dXyn8HfQBKWTPZ6r9GmzODPxHHfEk0lsYiEaS0Q26U1XgJPcAO6pYmgBn

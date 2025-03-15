@@ -67,6 +67,9 @@ public class WebSecurity {
 						.requestMatchers(PathRequest.toH2Console()).permitAll()
 //						.anyRequest().authenticated() // 나머지 요청은 인증 필요
 				)
+				.authorizeHttpRequests(req -> req.
+						requestMatchers("/actuator/**").permitAll()
+				)
 				.authorizeHttpRequests(request -> request
 						.requestMatchers("/**").access((authentication, ctx) -> {
 							String ipAddress = ctx.getRequest().getRemoteAddr();

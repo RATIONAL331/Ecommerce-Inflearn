@@ -25,7 +25,12 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans # actuator/health, actuator/beans, [POST]  actuator/refresh 으로 접근
 
-token:
-  expiration_time: 86400000 # 1 day
-  secret: Oh8IUy9dXyn8HfQBKWTPZ6r9GmzODPxHHfEk0lsYiEaS0Q26U1XgJPcAO6pYmgBn
+#token:
+#  expiration_time: 86400000 # 1 day
+#  secret: Oh8IUy9dXyn8HfQBKWTPZ6r9GmzODPxHHfEk0lsYiEaS0Q26U1XgJPcAO6pYmgBn
