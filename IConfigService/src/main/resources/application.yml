@@ -8,4 +8,4 @@ spring:
     config:
       server:
         git:
-          uri: file:///Users/rational331/Documents/Github/Ecommerce-Inflearn/IConfigService/src/main/resources/env
+          uri: file:///Users/rational331/Documents/Github/Ecommerce-Inflearn/config
