@@ -8,4 +8,5 @@ spring:
     config:
       server:
         git:
-          uri: file:///Users/rational331/Documents/Github/Ecommerce-Inflearn/config
+          uri: file:///Users/rational331/Documents/Github/Ecommerce-Inflearn/config # 해당 폴더 안에 .git 파일 존재 해야 함
+          default-label: main
